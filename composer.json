@@ -1,0 +1,24 @@
+{
+  "name": "wordpress-theme-koa",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "Koa wordpress theme",
+  "homepage": "https://github.com/jojoee/wordpress-theme-koa/",
+  "authors": [
+    {
+      "name": "Nathachai Thongniran",
+      "email": "inid3a@gmail.com",
+      "homepage": "https://github.com/jojoee/wordpress-theme-koa/"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/jojoee/wordpress-theme-koa/issues/"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "composer/installers": "~1.0"
+  }
+}
