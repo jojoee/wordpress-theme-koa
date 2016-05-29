@@ -1,0 +1,50 @@
+.banner {
+  height: 78vh;
+  @include bg-img;
+
+  /* hack */
+  .container {
+    display: table;
+  }
+  
+  .heading {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    height: 0;
+  }
+
+  .sitename {
+    font-size: 120px;
+    line-height: 108px;
+    margin: 0;
+    word-break: break-all;
+  }
+
+  .sitedesc {
+
+  }
+
+  &.default {
+
+    background: linear-gradient(127deg, rgba(255,255,255,1) 0%, rgba(217,217,217,1) 100%); /* w3c */
+  }
+}
+
+body.home .banner {
+  height: 100vh;
+
+  .heading {
+    height: 92vh;
+  }
+}
+
+.nav-primary {
+
+}
+
+.page-header {
+  border: none;
+  border-bottom: 1px solid $gray;
+  @include border-box;
+}

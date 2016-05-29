@@ -1,19 +1,40 @@
+/*================================================================ BOOTSTRAP
+*/
+
 .comment-list {
   @include list-unstyled;
+
+  ol {
+    list-style: none;
+  }
 }
-.comment-list ol {
-  list-style: none;
+
+.form-group {
+  margin-bottom: $form-group-margin-bottom;
 }
-.comment-form p {
-  @extend .form-group;
+
+.comment-form {
+  
+  p {
+    @extend .form-group;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  textarea {
+    // @extend .form-control;
+  }
+
+  input[type="submit"] {
+    // @extend .btn;
+    // @extend .btn-primary;
+  }
 }
-.comment-form input[type="text"],
-.comment-form input[type="email"],
-.comment-form input[type="url"],
-.comment-form textarea {
-  @extend .form-control;
-}
-.comment-form input[type="submit"] {
-  @extend .btn;
-  @extend .btn-primary;
+
+/*================================================================ CUSTOM
+*/
+
+.comment-wrap {
+
 }

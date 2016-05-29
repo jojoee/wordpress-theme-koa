@@ -1,0 +1,55 @@
+/*================================================================ BOOTSTRAP
+*/
+
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin make-sm-column {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*================================================================ CUSTOM
+*/
+
+@mixin bg-img($filename: null) {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @if ($filename) {
+    background-image: url("/image/#{$filename}");
+  }
+}
+
+@mixin bg-logo {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; 
+}
+
+@mixin bg-dummy {
+  @include bg-img("dummy-img.jpg");
+}
+
+@mixin transition() {
+  transition: all 0.2s ease;
+}
+
+@mixin will-change {
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+@mixin border-box {
+  box-sizing: border-box;
+}

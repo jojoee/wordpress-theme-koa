@@ -10,6 +10,11 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 $sage_includes = [
+  'lib/constants.php',
+  'lib/debug.php',
+  'lib/utils.php',
+  'lib/wp-utils.php',
+  'lib/theme-utils.php',
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions
   'lib/setup.php',     // Theme setup
@@ -26,3 +31,20 @@ foreach ( $sage_includes as $file ) {
   require_once $filepath;
 }
 unset( $file, $filepath );
+
+/*================================================================ CUSTOM
+*/
+
+/**
+ * [koa_excerpt_length description]
+ *
+ * @see https://codex.wordpress.org/Plugin_API/Filter_Reference/excerpt_length
+ * 
+ * @param  [type] $length [description]
+ * @return [type]         [description]
+ */
+function koa_excerpt_length( $length ) {
+  return 144;
+}
+
+add_filter( 'excerpt_length', 'koa_excerpt_length', 999 );

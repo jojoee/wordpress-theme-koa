@@ -1,10 +1,45 @@
 // Grid system
+
+.wrap {
+  padding-top: $space8;
+}
+
 .main {
-  @include make-sm-column($main-sm-columns);
-  .sidebar-primary & {
-    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
+  @include make-sm-column;
+  padding: 0;
+ 
+  @media (min-width: 768px) {
+    float: left;
+    width: 100%;
   }
 }
-.sidebar {
-  @include make-sm-column($sidebar-sm-columns);
+
+/* only for right-sidebar */
+/*
+.main {
+  @include make-sm-column;
+  padding: 0;
+ 
+  @media (min-width: 768px) {
+    float: left;
+    width: 100%;
+  }
+
+  .sidebar-primary & {
+
+    @media (min-width: 768px) {
+      float: left;
+      width: 66.6666666667%;
+    }
+  }
 }
+
+.sidebar {
+  @include make-sm-column;
+
+  @media (min-width: 768px) {
+    float: left;
+    width: 33.3333333333%;
+  }
+}
+*/

@@ -1,0 +1,80 @@
+article {
+  padding: 0 0 $space10;
+  background-color: $white;
+  box-shadow: inset 0 1px 0 0 $white;
+  border-bottom: 1px solid $gray;
+  @include border-box;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+  
+  header {
+
+    .entry-title {
+      margin: 0 0 $space4;
+    
+      a {
+        font-size: 32px;
+        color: $black;
+
+        &:hover {
+          color: $accent-hover-color;
+        }
+      }
+    }
+
+    .updated {
+
+    }
+
+    .author {
+
+    }
+  }
+
+  .entry-summary {
+
+  }
+
+  &:nth-child(2n) {
+    background-color: $gray-light;
+  }
+}
+
+body.home article {
+  padding: $space20 0;
+}
+
+.article-meta {
+  text-transform: lowercase;
+  
+  .updated {
+    float: left;
+    margin-right: $space1;
+  }
+
+  .author {
+    margin: 0;
+    padding: 0;
+
+    > a {
+
+    }
+  }
+}
+
+/*================================================================ POST NAVIGATION
+*/
+
+.posts-navigation-wrap {
+  padding: $space8 0 $space12;
+
+  .nav-previous {
+    float: left;
+  }
+
+  .nav-next {
+    float: right;
+  }
+}

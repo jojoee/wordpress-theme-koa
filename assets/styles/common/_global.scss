@@ -1,1 +1,82 @@
+/*================================================================ CUSTOM
+*/
 
+.italiana {
+  font-family: 'Italiana', sans-serif, serif;
+}
+
+body {
+  color: $black;
+  font-size: 16px;
+  font-family: 'Roboto', Helvetica, Arial, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $accent-color;
+  @include transition;
+  
+  &:active,
+  &:focus,
+  &.visited,
+  &:hover {
+    color: $accent-hover-color;
+  }
+}
+
+a.nounderline {
+
+  &:active,
+  &:focus,
+  &.visited,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* hack */
+/**
+ * hack
+ * due to "Italiana" support
+ * only normal font-weight
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/*================================================================ BOOTSTRAP
+*/
+
+// Only display content to screen readers
+//
+// See: http://a11yproject.com/posts/how-to-hide-content/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// Use in conjunction with .sr-only to only display content when it's focused.
+// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+// Credit: HTML5 Boilerplate
+.sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}

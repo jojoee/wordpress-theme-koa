@@ -11,4 +11,8 @@
   <?php get_template_part( 'templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format() ); ?>
 <?php endwhile; ?>
 
-<?php the_posts_navigation(); ?>
+<div class="posts-navigation-wrap">
+  <div class="container">
+    <?php echo get_the_posts_navigation(); ?>
+  </div>
+</div>
