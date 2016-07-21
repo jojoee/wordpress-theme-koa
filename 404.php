@@ -1,5 +1,6 @@
 <?php get_template_part( 'templates/page', 'header' ); ?>
 
+<!-- search no result and 404 are the same -->
 <article>
   <div class="container">
     <div class="alert alert-warning">

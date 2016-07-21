@@ -1,4 +1,4 @@
-article.post {
+main > article {
   padding: 0 0 $space6;
   background-color: $white;
   border-bottom: 1px solid $border-color;
@@ -95,9 +95,9 @@ article.post {
 }
 
 // Listing
-body.home article.post,
-body.search-results article.post,
-body.archive article.post {
+body.home main > article,
+body.search-results main > article,
+body.archive main > article {
   padding: $space10 0;
 
   &:nth-child(2n) {
@@ -110,11 +110,17 @@ body.archive article.post {
 }
 
 // Individual
-body.page article.post,
-body.single-post article.post,
-body.attachment article.post,
-body.error404 article.post {
+body.single-post main > article,
+body.attachment main > article,
+body.error404 main > article,
+body.search-no-results main > article {
   padding: $space8 0;
+}
+
+// Individual
+// cause `page` have `page-header`
+body.page main > article {
+  padding: $space2 0;
 }
 
 /*================================================================ POST NAVIGATION
