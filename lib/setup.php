@@ -44,6 +44,9 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
   add_theme_support( 'html5', [ 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ] );
 
+  // Theme Check
+  add_theme_support( 'automatic-feed-links' );
+
   // Use main stylesheet for visual editor
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
   add_editor_style( Assets\asset_path( 'styles/main.css' ) );
@@ -56,8 +59,8 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\\setup' );
  */
 function widgets_init() {
   register_sidebar( [
-    'name'          => __( 'Primary', 'koa' ),
-    'id'            => 'sidebar-primary',
+    'name'          => __( 'Footer 1', 'koa' ),
+    'id'            => 'sidebar-footer1',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
@@ -65,8 +68,17 @@ function widgets_init() {
   ] );
 
   register_sidebar( [
-    'name'          => __( 'Footer', 'koa' ),
-    'id'            => 'sidebar-footer',
+    'name'          => __( 'Footer 2', 'koa' ),
+    'id'            => 'sidebar-footer2',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ] );
+
+  register_sidebar( [
+    'name'          => __( 'Footer 3', 'koa' ),
+    'id'            => 'sidebar-footer3',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
@@ -78,6 +90,7 @@ add_action( 'widgets_init', __NAMESPACE__ . '\\widgets_init' );
 
 /**
  * Determine which pages should NOT display the sidebar
+ * (unused)
  */
 function display_sidebar() {
   static $display;

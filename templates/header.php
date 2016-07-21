@@ -15,7 +15,8 @@
     $banner_url = get_wpfeatured_image_url( $post_id );
 
     if ( is_null_or_empty_string( $banner_url ) ) {
-      $custom_css = 'default';  
+      $banner_url = get_default_banner_url();
+      $custom_css = 'default';
     }
   }
 ?>
@@ -23,17 +24,6 @@
 <header class="banner <?php echo $custom_css; ?>"
   <?php the_background_image_style( $banner_url ); ?>>
   <div class="container">
-    <nav class="nav-primary">
-      <?php
-      if ( has_nav_menu( 'primary_navigation' ) ) :
-        wp_nav_menu( [
-          'theme_location'  => 'primary_navigation',
-          'menu_class'      => 'nav'
-        ] );
-      endif;
-      ?>
-    </nav>
-
     <div class="heading">
       <h1 class="sitename italiana">
         <a class="brand italiana nounderline"

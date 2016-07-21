@@ -1,6 +1,11 @@
 <?php
 
 define( 'IMAGE_PATH', get_template_directory_uri() . '/dist/images' );
+define( 'DEFAULT_IMAGE_PATH', IMAGE_PATH . '/default' );
 
-define( 'DEFAULT_FEATURED_IMAGE_NAME', 'featured-image.svg' );
-define( 'DEFAULT_FEATURED_IMAGE_PATH', IMAGE_PATH . '/' . DEFAULT_FEATURED_IMAGE_NAME );
+define( 'DEFAULT_BANNER_NAME', 'banner.jpg' );
+define( 'DEFAULT_BANNER_PATH', DEFAULT_IMAGE_PATH . '/' . DEFAULT_BANNER_NAME );
+
+function get_default_banner_url() {
+  return DEFAULT_BANNER_PATH;
+}

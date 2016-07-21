@@ -1,0 +1,23 @@
+/*================================================================ Jetpack by WordPress.com
+*/
+
+// Gallery
+.gallery {
+  @extend .clearfix;
+
+  .gallery-item {
+    float: left;
+    margin: $space1;
+  }
+}
+
+// Unused
+// HACK
+.gallery-caption {
+  color: $text-color;
+}
+
+// Fix
+body.tiled-gallery {
+  overflow-y: scroll;
+}

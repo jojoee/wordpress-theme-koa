@@ -53,3 +53,37 @@ function get_posts_by_post_type( $post_type = '', $nposts = -1 ) {
 
   return get_posts( $args );
 }
+
+/**
+ * [the_category_list description]
+ *
+ * @see https://codex.wordpress.org/Function_Reference/get_the_category_list
+ * 
+ * @return [type] [description]
+ */
+function the_category_list() {
+  $categories_list = get_the_category_list( __( ', ', 'koa' ) );
+
+  if ( ! is_null_or_empty_string( $categories_list ) ) {
+    echo '<div class="category-list">';
+    echo 'Category: ' . $categories_list;
+    echo '</div>';
+  }
+}
+
+/**
+ * [the_tag_list description]
+ *
+ * @see https://codex.wordpress.org/Function_Reference/get_the_tag_list
+ * 
+ * @return [type] [description]
+ */
+function the_tag_list() {
+  $tag_list = get_the_tag_list( '', __( ', ', 'koa' ), '' );
+
+  if ( ! is_null_or_empty_string( $tag_list ) ) {
+    echo '<div class="tag-list">';
+    echo 'Tag: ' . $tag_list;
+    echo '</div>';
+  }
+}

@@ -48,3 +48,9 @@ function koa_excerpt_length( $length ) {
 }
 
 add_filter( 'excerpt_length', 'koa_excerpt_length', 999 );
+
+// https://codex.wordpress.org/Content_Width
+// https://wycks.wordpress.com/2013/02/14/why-the-content_width-wordpress-global-kinda-sucks/
+if ( ! isset( $content_width ) ) {
+  $content_width = 1170;
+}

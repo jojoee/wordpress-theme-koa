@@ -1,18 +1,16 @@
 // Search form
 .search-form {
-  // @extend .form-inline;
+  margin: $space2 0;
 
   label {
     font-weight: normal;
-    @extend .form-group;
   }
 
   .search-field {
-    // @extend .form-control;
+    
   }
 
   .search-submit {
-    // @extend .btn;
-    // @extend .btn-default;
+    display: none;
   }
 }

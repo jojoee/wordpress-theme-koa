@@ -5,5 +5,38 @@
     "Nathachai Thongniran <inid3a@gmail.com>"
   ],
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "fastclick": "^1.0.6",
+    "font-awesome": "^4.6.3",
+    "jeans": "^1.0.0",
+    "slideout.js": "^0.1.12"
+  },
+  "overrides": {
+    "fastclick": {
+      "main": [
+        "./lib/fastclick.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "./css/font-awesome.css",
+        "./fonts/fontawesome-webfont.eot",
+        "./fonts/fontawesome-webfont.svg",
+        "./fonts/fontawesome-webfont.ttf",
+        "./fonts/fontawesome-webfont.woff",
+        "./fonts/fontawesome-webfont.woff2"
+      ]
+    },
+    "jeans": {
+      "main": [
+        "./sass/jeans.scss"
+      ]
+    },
+    "slideout.js": {
+      "main": [
+        "./dist/slideout.js"
+      ]
+    }
+  }
 }

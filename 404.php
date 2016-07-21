@@ -1,7 +1,11 @@
 <?php get_template_part( 'templates/page', 'header' ); ?>
 
-<div class="alert alert-warning">
-  <?php _e( 'Sorry, but the page you were trying to view does not exist.', 'koa' ); ?>
-</div>
+<article>
+  <div class="container">
+    <div class="alert alert-warning">
+      <?php _e( 'Sorry, but the page you were trying to view does not exist.', 'koa' ); ?>
+    </div>
 
-<?php get_search_form(); ?>
+    <?php get_search_form(); ?>
+  </div>
+</article>

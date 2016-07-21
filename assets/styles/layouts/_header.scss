@@ -2,7 +2,7 @@
   height: 78vh;
   @include bg-img;
 
-  /* hack */
+  // HACK
   .container {
     display: table;
   }
@@ -24,10 +24,11 @@
   .sitedesc {
 
   }
-
-  &.default {
-
-    background: linear-gradient(127deg, rgba(255,255,255,1) 0%, rgba(217,217,217,1) 100%); /* w3c */
+  
+  // unused
+  &.noimg {
+    display: none;
+    background: linear-gradient(127deg, rgba(255, 255, 255, 1) 0%, rgba(217, 217, 217, 1) 100%); /* w3c */
   }
 }
 
@@ -39,12 +40,141 @@ body.home .banner {
   }
 }
 
-.nav-primary {
-
-}
-
 .page-header {
   border: none;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $border-color;
   @include border-box;
+}
+
+/*================================================================ Nav Menu
+*/
+
+.nav-primary-btn {
+  position: fixed;
+  background-color: $white;
+  z-index: 2;
+  top: $space6;
+  right: $space6;
+
+  &:hover,
+  &:focus {
+
+    > i {
+      color: $white;
+    }
+  }
+}
+
+.nav-primary {
+  display: none;
+  background-color: $black;
+  
+  // Hide scroll bar (force)
+  // http://stackoverflow.com/questions/3296644/hiding-the-scrollbar-on-an-html-page
+  &::-webkit-scrollbar { 
+    display: none; 
+  }
+
+  a {
+    display: block;
+    padding: $space2;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-bottom: 1px solid $nav-link-border-color;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+
+    li {
+
+    }
+  }
+  
+  // First-level sub-menu
+  .nav > .menu-item-has-children {
+
+    > .sub-menu {
+      display: none;
+
+      &.active {
+      display: block;
+    }
+
+      > li {
+        padding: 0;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      content: '+';
+      right: 12px;
+      font-size: 22px;
+      height: 45px;
+      line-height: 45px;
+      z-index: 1;
+      color: $nav-expand-icon-color;
+      cursor: pointer;
+    }
+  }
+
+  .sub-menu {
+    display: block;
+    background-color: $nav-submenu-bg-color;
+
+    a {
+      color: $white;
+      font-size: 12px;
+
+      &:hover {
+        background-color: $nav-submenu-bg-color;
+        color: $link-hover-color;
+      }
+    }
+
+    li {
+      padding-left: $space3;
+    }
+  }
+}
+
+// Slideout.js
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  @include will-change;
+}
+
+.slideout-open {
+
+  &,
+  body,
+  .slideout-panel {
+    overflow: hidden;
+  }
+
+  .slideout-menu {
+    display: block;
+  }
 }

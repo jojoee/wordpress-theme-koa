@@ -1,21 +1,3 @@
-/*================================================================ BOOTSTRAP
-*/
-
-@mixin list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-
-@mixin make-sm-column {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/*================================================================ CUSTOM
-*/
-
 @mixin bg-img($filename: null) {
   background-repeat: no-repeat;
   background-position: center center;
@@ -51,5 +33,12 @@
 }
 
 @mixin border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+@mixin break-word {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }

@@ -13,6 +13,6 @@
 
 <div class="posts-navigation-wrap">
   <div class="container">
-    <?php echo get_the_posts_navigation(); ?>
+    <?php the_posts_navigation(); ?>
   </div>
 </div>

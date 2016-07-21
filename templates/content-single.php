@@ -1,4 +1,4 @@
-<?php // single ?>
+<?php // single post ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
   <article <?php post_class(); ?>>
@@ -15,14 +15,23 @@
         <?php the_content(); ?>
       </div>
 
+      <div class="entry-other">
+        <?php
+          the_category_list();
+          the_tag_list();
+        ?>
+      </div>
+
       <footer>
-        <?php wp_link_pages( [
-          'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'koa' ),
-          'after'  => '</p></nav>'
-        ] ); ?>
+        <?php
+          wp_link_pages( [
+            'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'koa' ),
+            'after'  => '</p></nav>'
+          ] );
+        ?>
       </footer>
 
-      <div class="comment-wrap">
+      <div class="comment-wrap clearfix">
         <?php comments_template( '/templates/comments.php' ); ?>
       </div>
     </div>

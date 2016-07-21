@@ -13,6 +13,7 @@ function template_path() {
   return SageWrapping::$main_template;
 }
 
+// unused
 function sidebar_path() {
   return new SageWrapping( 'templates/sidebar.php' );
 }

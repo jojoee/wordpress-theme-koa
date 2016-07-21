@@ -1,9 +1,9 @@
-article {
-  padding: 0 0 $space10;
+article.post {
+  padding: 0 0 $space6;
   background-color: $white;
-  box-shadow: inset 0 1px 0 0 $white;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $border-color;
   @include border-box;
+  @include break-word;
 
   &:last-child {
     border-bottom: 0;
@@ -19,7 +19,7 @@ article {
         color: $black;
 
         &:hover {
-          color: $accent-hover-color;
+          color: $link-hover-color;
         }
       }
     }
@@ -33,28 +33,58 @@ article {
     }
   }
 
+  figure {
+    
+    figcaption {
+      border: 1px solid $border-color;
+    }
+  }
+  
+  // Single post / page only
+  .entry-content {
+    @extend .clearfix;
+    margin: $space2 0;
+    overflow: hidden;
+  }
+  
+  // Single post / page only
+  .entry-other {
+    @extend .clearfix;
+  }
+  
+  // Listing only
   .entry-summary {
-
+    @extend .clearfix;
   }
 
-  &:nth-child(2n) {
-    background-color: $gray-light;
+  img {
+    max-width: 100%;
   }
-}
 
-body.home article {
-  padding: $space20 0;
+  &.sticky {
+    background-color: $sticky-article-bg-color !important;
+    color: $white;
+    
+    .entry-title a {
+      color: $white !important;
+    }
+
+    .author a {
+      color: $white !important;
+      text-decoration: underline;
+    }
+  }
 }
 
 .article-meta {
-  text-transform: lowercase;
   
   .updated {
-    float: left;
+    display: inline-block;
     margin-right: $space1;
   }
 
   .author {
+    display: inline-block;
     margin: 0;
     padding: 0;
 
@@ -64,11 +94,38 @@ body.home article {
   }
 }
 
+// Listing
+body.home article.post,
+body.search-results article.post,
+body.archive article.post {
+  padding: $space10 0;
+
+  &:nth-child(2n) {
+    background-color: $even-article-bg-color;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding: $space20 0;
+  }
+}
+
+// Individual
+body.page article.post,
+body.single-post article.post,
+body.attachment article.post,
+body.error404 article.post {
+  padding: $space8 0;
+}
+
 /*================================================================ POST NAVIGATION
 */
 
 .posts-navigation-wrap {
-  padding: $space8 0 $space12;
+
+  .nav-previous,
+  .nav-next {
+    padding: $space8 0;
+  }
 
   .nav-previous {
     float: left;

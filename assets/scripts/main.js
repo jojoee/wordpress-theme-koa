@@ -74,4 +74,37 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+  /**
+   * Code style
+   *
+   * $: jQuery object
+   * e: Element
+   */
+
+  /*================================================================ Slideout.js
+  */
+  
+  var eBodyWrap = document.getElementById('body-wrap'),
+    eMenu = document.getElementById('nav-primary'),
+    eMenuBtn = document.querySelector('.nav-primary-btn');
+
+  var slideout = new Slideout({
+    'panel': eBodyWrap,
+    'menu': eMenu,
+    'padding': 256,
+    'tolerance': 70
+  });
+
+  // Toggle button
+  eMenuBtn.addEventListener('click', function() {
+    slideout.toggle();
+  });
+
+  // Nav Primary Btn
+  var $navSubmenuBtn =  $('#nav-primary .nav > .menu-item-has-children > a');
+  $navSubmenuBtn.on('click', function(e) {
+    e.preventDefault(); // Force not follow the link
+    $(this).next().toggleClass('active');
+  });
+
 })(jQuery); // Fully reference jQuery after this point.

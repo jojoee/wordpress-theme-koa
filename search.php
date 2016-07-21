@@ -11,4 +11,8 @@
   <?php get_template_part( 'templates/content', 'search' ); ?>
 <?php endwhile; ?>
 
-<?php the_posts_navigation(); ?>
+<div class="posts-navigation-wrap">
+  <div class="container">
+    <?php the_posts_navigation(); ?>
+  </div>
+</div>

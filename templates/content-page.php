@@ -1,9 +1,16 @@
-<?php
-  the_content();
+<article>
+  <div class="container">
+    <div class="entry-content">
+      <?php the_content(); ?>
+    </div>
 
-  $wp_link_pages_args = [
-    'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'koa' ),
-    'after' => '</p></nav>'
-  ];
-  wp_link_pages( $wp_link_pages_args );
-?>
+    <footer>
+      <?php
+        wp_link_pages( [
+        'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'koa' ),
+        'after' => '</p></nav>'
+        ] );
+      ?>
+    </footer>
+  </div>
+</article>
