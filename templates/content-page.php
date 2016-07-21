@@ -1,3 +1,13 @@
+<?php if ( function_exists( 'yoast_breadcrumb' ) ) : ?>
+  <div class="koabreadcrumb-wrap">
+    <div class="container">
+      <div class="koabreadcrumb">
+        <?php yoast_breadcrumb(); ?>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>
+
 <article>
   <div class="container">
     <div class="entry-content">
