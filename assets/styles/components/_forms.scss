@@ -14,3 +14,14 @@
     display: none;
   }
 }
+
+// Contact Form 7
+// based on .comment-respond
+.wpcf7 {
+  border: 1px solid $border-color;
+  border-radius: 2px;
+}
+
+.wpcf7-form {
+  padding: $space2 $space4;
+}

@@ -60,6 +60,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 input[type="tel"],
+input[type="date"],
 input[type="number"],
 textarea {
   background-color: $input-bg-color;
@@ -90,6 +91,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   background-color: $white;
+  box-shadow: 3px 3px 3px -3px $btn-shadow-color;
 
   &:hover,
   &:focus {
