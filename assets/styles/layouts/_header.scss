@@ -1,6 +1,7 @@
 .banner {
   height: 78vh;
   @include bg-img;
+  position: relative;
 
   // HACK
   .container {
