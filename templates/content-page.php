@@ -1,8 +1,17 @@
-<?php if ( function_exists( 'yoast_breadcrumb' ) ) : ?>
+<?php // Yoast SEO breadcrumb over Breadcrumb NavXT ?>
+
+<?php if ( function_exists( 'yoast_breadcrumb' ) || function_exists( 'bcn_display' ) ) : ?>
   <div class="koabreadcrumb-wrap">
     <div class="container">
       <div class="koabreadcrumb">
-        <?php yoast_breadcrumb(); ?>
+        <?php if ( function_exists( 'yoast_breadcrumb' ) ) : ?>
+          <?php yoast_breadcrumb(); ?>
+        
+        <?php elseif ( function_exists( 'bcn_display' ) ) : ?>
+          <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+            <?php bcn_display(); ?>
+          </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>
