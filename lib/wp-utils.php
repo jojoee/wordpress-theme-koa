@@ -163,19 +163,6 @@ function is_default_page_template() {
   return ( is_page() && ! is_page_template() );
 }
 
-/* 
-http://codex.wordpress.org/Function_Reference/get_user_meta
-https://developer.wordpress.org/reference/functions/get_the_author_meta/
-https://developer.wordpress.org/reference/functions/get_user_meta/
-https://codex.wordpress.org/Function_Reference/wp_get_current_user
-https://codex.wordpress.org/Function_Reference/get_userdata
-https://codex.wordpress.org/Function_Reference/get_currentuserinfo
-
-other usages
-$user_id = get_current_user_id();
-$user_data = get_userdata($user_id);
-$current_user = wp_get_current_user();
-*/
 function get_wpuser_meta()                { return get_user_meta( get_wpauthor_id() ); }
 function get_wpauthor_id()                { return get_the_author_meta( 'ID' ); }
 function get_wpauthor_login()             { return get_the_author_meta( 'user_login' ); } 
