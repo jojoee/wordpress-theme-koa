@@ -8,5 +8,6 @@ vendor
 
 bk
 .idea
-README*.md
-!README-*.md
+readme*.txt
+!readme-*.txt
+wordpress-theme-koa.zip
