@@ -9,8 +9,8 @@
   "dependencies": {
     "fastclick": "^1.0.6",
     "font-awesome": "^4.6.3",
-    "jeans": "^1.0.0",
-    "slideout.js": "^0.1.12"
+    "slideout.js": "^0.1.12",
+    "jeans-kit": "^1.1.2"
   },
   "overrides": {
     "fastclick": {
@@ -28,9 +28,9 @@
         "./fonts/fontawesome-webfont.woff2"
       ]
     },
-    "jeans": {
+    "jeans-kit": {
       "main": [
-        "./sass/jeans.scss"
+        "./sass/jeans-kit.scss"
       ]
     },
     "slideout.js": {
