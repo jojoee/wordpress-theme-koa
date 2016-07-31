@@ -13,8 +13,8 @@
   },
   "licenses": [
     {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT/"
+      "type": "GPL",
+      "url": "http://www.gnu.org/licenses/gpl-2.0.html"
     }
   ],
   "scripts": {

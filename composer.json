@@ -1,7 +1,7 @@
 {
   "name": "wordpress-theme-koa",
   "type": "wordpress-theme",
-  "license": "MIT",
+  "license": "GPL",
   "description": "Koa wordpress theme",
   "homepage": "https://github.com/jojoee/wordpress-theme-koa/",
   "authors": [

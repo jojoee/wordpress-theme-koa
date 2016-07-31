@@ -4,7 +4,7 @@
   "authors": [
     "Nathachai Thongniran <inid3a@gmail.com>"
   ],
-  "license": "MIT",
+  "license": "GPL",
   "private": true,
   "dependencies": {
     "fastclick": "^1.0.6",
