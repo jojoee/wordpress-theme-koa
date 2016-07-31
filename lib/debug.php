@@ -106,20 +106,7 @@ function debug_condition_tags() { ?>
     'is_time',
     'is_trackback',
     'is_year',
-    'pings_open',
-
-    // custom
-    /*
-    'is_404',
-    'is_front_page',
-    'is_race_page_template',
-    'is_contact_us_page_template',
-    'is_sitemap_page_template',
-    'is_default_page_template',
-    'is_carnival_listing_page_template',
-    'is_carnival_post_type',
-    'is_race_post_type',
-    */
+    'pings_open'
   ];
 
   echo '<div class="decond-tags">';
