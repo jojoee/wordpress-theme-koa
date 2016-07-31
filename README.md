@@ -1,6 +1,25 @@
 # Koa
 Koa - wordpress blog theme, inspired by [koa](http://koajs.com/)
 
+## Getting started (development purpose)
+1. Set path (e.g. `cd wp-content/themes/wordpress-theme-koa/`)
+2. Install global - `npm install -g bower gulp jscs`
+3. Install dependencies - `npm install & bower install & composer install`
+4. Set proxy on `devUrl` in `wp-content\themes\wordpress-theme-koa\assets\manifest.json`
+5. Run task runner - `gulp` or `gulp` watch (for develop)
+
+## Note
+- Based on [Sage](https://github.com/jojoee/sage-with-space)
+- CSS code style: [rscss](http://rscss.io/)
+- Javascript code style: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+- Yoast SEO breadcrumb over Breadcrumb NavXT
+- 3 footer sidebars but no right sidebar
+- Menu: [slideout](https://github.com/Mango/slideout)
+- Menu (alternative)
+  - [jQuery-menu-aim](https://github.com/kamens/jQuery-menu-aim)
+  - [jQuery.mmenu](https://github.com/FrDH/jQuery.mmenu)
+  - [pushy](https://github.com/christophery/pushy)
+
 ## Support
 - [x] [WP-PageNavi](https://wordpress.org/plugins/wp-pagenavi/)
 - [x] [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
@@ -45,24 +64,6 @@ Koa - wordpress blog theme, inspired by [koa](http://koajs.com/)
 - [x] Fixed `REQUIRED` of [Theme Check](https://wordpress.org/plugins/theme-check/)
 - [x] [Log Deprecated Notices](https://wordpress.org/plugins/log-deprecated-notices/)
 - [x] [RTL Tester](https://wordpress.org/plugins/rtl-tester/)
-
-## Getting started (development purpose)
-1. Set path (e.g. `cd wp-content/themes/wordpress-theme-koa/`)
-2. Install global - `npm install -g bower gulp jscs`
-3. Install dependencies - `npm install & bower install & composer install`
-4. Set proxy on `devUrl` in `wp-content\themes\wordpress-theme-koa\assets\manifest.json`
-5. Run task runner - `gulp` or `gulp` watch (for develop)
-
-## Note
-- Based on [Sage](https://github.com/jojoee/sage-with-space)
-- CSS code style: [rscss](http://rscss.io/)
-- Javascript code style: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-- Yoast SEO breadcrumb over Breadcrumb NavXT
-- Menu: [slideout](https://github.com/Mango/slideout)
-- Menu (alternative)
-  - [jQuery-menu-aim](https://github.com/kamens/jQuery-menu-aim)
-  - [jQuery.mmenu](https://github.com/FrDH/jQuery.mmenu)
-  - [pushy](https://github.com/christophery/pushy)
 
 ## Reference & Thank you
 - [Wordpress.org](https://wordpress.org/themes/)
