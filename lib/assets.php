@@ -11,6 +11,7 @@ class JsonManifest {
   public function __construct( $manifest_path ) {
     if ( file_exists( $manifest_path ) ) {
       $this->manifest = json_decode( file_get_contents( $manifest_path ), true );
+
     } else {
       $this->manifest = [ ];
     }
@@ -25,12 +26,15 @@ class JsonManifest {
     if ( is_null( $key ) ) {
       return $collection;
     }
+
     if ( isset( $collection[ $key ] ) ) {
       return $collection[ $key ];
     }
+
     foreach ( explode( '.', $key ) as $segment ) {
       if ( ! isset( $collection[ $segment ] ) ) {
         return $default;
+
       } else {
         $collection = $collection[ $segment ];
       }
@@ -53,6 +57,7 @@ function asset_path( $filename ) {
 
   if ( array_key_exists( $file, $manifest->get() ) ) {
     return $dist_path . $directory . $manifest->get()[ $file ];
+    
   } else {
     return $dist_path . $directory . $file;
   }

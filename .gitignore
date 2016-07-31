@@ -8,4 +8,5 @@ vendor
 
 bk
 .idea
-readme-me.txt
+README*.md
+!README-*.md
