@@ -18,9 +18,5 @@
 <?php endwhile; ?>
 
 <?php if ( have_posts() ) : ?>
-  <div class="posts-navigation-wrap">
-    <div class="container">
-      <?php the_posts_navigation(); ?>
-    </div>
-  </div>
+  <?php koa_posts_navigation(); ?>
 <?php endif; ?>

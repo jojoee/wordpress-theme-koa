@@ -54,3 +54,20 @@ add_filter( 'excerpt_length', 'koa_excerpt_length', 999 );
 if ( ! isset( $content_width ) ) {
   $content_width = 1170;
 }
+
+// post navigation
+function koa_posts_navigation() { ?>
+  <div class="posts-navigation-wrap">
+    <div class="container">
+      <?php
+        if ( function_exists( 'wp_pagenavi' ) ) {
+          wp_pagenavi();
+
+        } else {
+          the_posts_navigation();
+        }
+      ?>
+    </div>
+  </div>
+  <?php
+}
