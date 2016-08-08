@@ -1,5 +1,6 @@
 {
   "name": "wordpress-theme-koa",
+  "description": "Koa wordpress theme, simple clean blog, a fully responsive lightweight theme. Compatible with all devices",
   "homepage": "https://github.com/jojoee/wordpress-theme-koa/",
   "authors": [
     "Nathachai Thongniran <inid3a@gmail.com>"
