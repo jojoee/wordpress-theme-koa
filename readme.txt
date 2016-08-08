@@ -51,6 +51,8 @@ Koa - wordpress blog theme, inspired by [koa](http://koajs.com/)
 * [ ] Theme Customizer by [Kirki](https://kirki.org/)
 * [ ] [FastClick](https://github.com/ftlabs/fastclick)
 * [ ] Navmenu: when hover then show scrollbar
+* [ ] Fix `.travis.yml`
+* [ ] Translation ready
 
 === Checklist ===
 
