@@ -5,7 +5,7 @@
     "Nathachai Thongniran <inid3a@gmail.com>"
   ],
   "license": "GPL",
-  "private": true,
+  "private": false,
   "dependencies": {
     "fastclick": "^1.0.6",
     "font-awesome": "^4.6.3",

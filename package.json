@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Nathachai Thongniran <inid3a@gmail.com>",
   "homepage": "https://github.com/jojoee/wordpress-theme-koa/",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git://github.com/jojoee/wordpress-theme-koa.git"
