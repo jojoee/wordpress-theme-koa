@@ -81,12 +81,10 @@
    * e: Element
    */
 
-  /*================================================================ Slideout.js
-  */
-  
-  var eBodyWrap = document.getElementById('body-wrap'),
-    eMenu = document.getElementById('nav-primary'),
-    eMenuBtn = document.querySelector('.nav-primary-btn');
+  // Slideout.js
+  var eBodyWrap = document.getElementById('body-wrap');
+  var eMenu = document.getElementById('nav-primary');
+  var eMenuBtn = document.querySelector('.nav-primary-btn');
 
   var slideout = new Slideout({
     'panel': eBodyWrap,
@@ -95,12 +93,12 @@
     'tolerance': 70
   });
 
-  // Toggle button
+  // Slideout.js - Toggle button
   eMenuBtn.addEventListener('click', function() {
     slideout.toggle();
   });
 
-  // Nav Primary Btn
+  // Slideout.js - // Nav Primary Btn
   var $navSubmenuBtn =  $('#nav-primary .nav > .menu-item-has-children > a');
   $navSubmenuBtn.on('click', function(e) {
     e.preventDefault(); // Force not follow the link
