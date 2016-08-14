@@ -10,19 +10,19 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 $sage_includes = [
+  'lib/vendor/kirki-helpers/include-kirki.php',
+  'lib/vendor/kirki-helpers/class-koa-kirki.php',
   'lib/constants.php',
   'lib/debug.php',
   'lib/utils.php',
   'lib/wp-utils.php',
   'lib/theme-utils.php',
-  'lib/assets.php',    // Scripts and stylesheets
-  'lib/extras.php',    // Custom functions
-  'lib/setup.php',     // Theme setup
-  'lib/titles.php',    // Page titles
-  'lib/wrapper.php',   // Theme wrapper class
-  'lib/vendor/kirki-helpers/include-kirki.php',
-  'lib/vendor/kirki-helpers/class-koa-kirki.php',
-  'lib/customizer.php' // Theme customizer
+  'lib/assets.php',
+  'lib/extras.php',
+  'lib/setup.php',
+  'lib/titles.php',
+  'lib/wrapper.php',
+  'lib/customizer.php',
 ];
 
 foreach ( $sage_includes as $file ) {
