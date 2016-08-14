@@ -20,6 +20,8 @@ $sage_includes = [
   'lib/setup.php',     // Theme setup
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
+  'lib/vendor/kirki-helpers/include-kirki.php',
+  'lib/vendor/kirki-helpers/class-koa-kirki.php',
   'lib/customizer.php' // Theme customizer
 ];
 

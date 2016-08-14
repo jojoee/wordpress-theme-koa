@@ -63,20 +63,6 @@ main > article {
   img {
     max-width: 100%;
   }
-
-  &.sticky {
-    background-color: $sticky-article-bg-color !important;
-    color: $white;
-    
-    .entry-title a {
-      color: $white !important;
-    }
-
-    .author a {
-      color: $white !important;
-      text-decoration: underline;
-    }
-  }
 }
 
 .article-meta {
@@ -94,6 +80,21 @@ main > article {
     > a {
 
     }
+  }
+}
+
+// Sticky
+body.home main > article.post.sticky {
+  background-color: $sticky-article-bg-color;
+  color: $white;
+  
+  .entry-title a {
+    color: $white;
+  }
+
+  .author a {
+    color: $white;
+    text-decoration: underline;
   }
 }
 

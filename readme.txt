@@ -48,7 +48,7 @@ Koa - wordpress blog theme, inspired by [koa](http://koajs.com/)
 
 * [ ] Lightbox: (e.g. [MediumLightbox](https://github.com/davidecalignano/MediumLightbox), [Fluidbox](https://github.com/terrymun/Fluidbox), [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/))
 * [x] Google Fonts: [Web Font Loader](https://github.com/typekit/webfontloader)
-* [ ] Theme Customizer by [Kirki](https://kirki.org/)
+* [x] Theme Customizer by [Kirki](https://kirki.org/)@15commits
 * [ ] [FastClick](https://github.com/ftlabs/fastclick)
 * [ ] Navmenu: when hover then show scrollbar
 * [ ] Fix `.travis.yml`
