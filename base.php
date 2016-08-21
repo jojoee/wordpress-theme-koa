@@ -52,7 +52,7 @@ html { margin-top: 0 !important; }
 
   <?php
     do_action( 'get_footer' );
-    get_template_part( 'templates/footer' );    
+    get_template_part( 'templates/footer' );
   ?>
 </div><!-- .body-wrap -->
 
