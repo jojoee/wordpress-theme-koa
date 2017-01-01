@@ -27,7 +27,6 @@ add_action( 'customize_preview_init', __NAMESPACE__ . '\\customize_preview_js' )
 /*================================================================ Kirki
 */
 
-$koa_text_domain = 'atcr';
 $koa_kirki_key   = 'koa_kirki';
 
 if ( class_exists( 'Kirki' ) ) {
@@ -40,7 +39,7 @@ if ( class_exists( 'Kirki' ) ) {
 
   // sections
   KOA_Kirki::add_section( 'article', [
-    'title'      => __( 'Article', $koa_text_domain ),
+    'title'      => __( 'Article', 'koa' ),
     'priority'   => 4,
     'capability' => 'edit_theme_options'
   ] );
@@ -55,7 +54,7 @@ if ( class_exists( 'Kirki' ) ) {
   KOA_Kirki::add_field( $koa_kirki_key, [
     'type'      => 'color',
     'settings'  => 'article_sticky_color',
-    'label'     => __( 'Sticky Color', $koa_text_domain ),
+    'label'     => __( 'Sticky Color', 'koa' ),
     'section'   => 'article',
     'default'   => '#ffffff',
     'priority'  => 10,
@@ -82,7 +81,7 @@ if ( class_exists( 'Kirki' ) ) {
   KOA_Kirki::add_field( $koa_kirki_key, [
     'type'      => 'color',
     'settings'  => 'article_sticky_bg_color',
-    'label'     => __( 'Sticky Background Color', $koa_text_domain ),
+    'label'     => __( 'Sticky Background Color', 'koa' ),
     'section'   => 'article',
     'default'   => '#33a0c0',
     'priority'  => 10,

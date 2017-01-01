@@ -38,7 +38,7 @@ if ( ! class_exists( 'Kirki' ) ) {
 					<iframe id="kirki-customizer-installer" src="<?php echo admin_url( 'plugin-install.php?tab=plugin-information&amp;plugin=kirki' ); ?>"></iframe>
 				<?php else : ?>
 					<hr>
-					<p><?php printf( __( 'The plugin is installed but not activated. Please <a href="%s">activate it</a>.', 'textdomain' ), admin_url( 'plugins.php' ) ); ?></p>
+					<p><?php printf( __( 'The plugin is installed but not activated. Please <a href="%s">activate it</a>.', 'koa' ), admin_url( 'plugins.php' ) ); ?></p>
 				<?php endif;
 			}
 		}
@@ -55,7 +55,7 @@ if ( ! class_exists( 'Kirki' ) ) {
 			// Please note that the title will not be displayed.
 			$wp_customize->add_section( 'kirki_installer', array(
 				'title'       => '',
-				'description' => esc_attr__( 'If you want to take full advantage of the options this theme has to provide, please install the Kirki plugin.', 'textdomain' ),
+				'description' => esc_attr__( 'If you want to take full advantage of the options this theme has to provide, please install the Kirki plugin.', 'koa' ),
 				'priority'    => -10,
 				'capability'  => 'install_plugins',
 			) );
