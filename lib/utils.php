@@ -44,20 +44,6 @@ function is_null_or_empty_string( $str ) {
   return ( ! isset( $str ) || trim( $str ) === '' );
 }
 
-/**
- * [get_word_count description]
- *
- * @see http://www.thomashardy.me.uk/wordpress-word-count-function
- * 
- * @param  [type] $content [description]
- * @return [type]          [description]
- */
-function get_word_count( $content = '' ) {
-  $word_count = str_word_count( strip_tags( $content ) );
-
-  return $word_count;
-}
-
 /*================================================================ Image
 */
 
