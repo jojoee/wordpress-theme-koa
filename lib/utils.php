@@ -58,3 +58,7 @@ function get_background_image_style( $url = '' ) {
 function the_background_image_style( $url = '' ) {
   echo get_background_image_style( $url );
 }
+
+function koa_get_default_banner_url() {
+  return KOA_DEFAULT_BANNER_PATH;
+}
