@@ -1,9 +1,9 @@
 <?php
 
 /* 
-namespace Roots\Sage\Customizer;
+namespace Jojoee\Koa\Customizer;
 
-use Roots\Sage\Assets;
+use Jojoee\Koa\Assets;
 
 function customize_register( $wp_customize ) {
   $wp_customize->get_setting( 'blogname' )->transport = 'postMessage';

@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Extras;
+namespace Jojoee\Koa\Extras;
 
-use Roots\Sage\Setup;
+use Jojoee\Koa\Setup;
 
 /**
  * Add <body> classes

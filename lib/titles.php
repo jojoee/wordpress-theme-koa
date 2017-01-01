@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\Titles;
+namespace Jojoee\Koa\Titles;
 
 /**
  * Page titles

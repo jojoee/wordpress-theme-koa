@@ -1,4 +1,4 @@
-<?php use Roots\Sage\Titles; ?>
+<?php use Jojoee\Koa\Titles; ?>
 
 <div class="page-header">
   <div class="container">

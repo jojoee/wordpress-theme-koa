@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Setup;
+namespace Jojoee\Koa\Setup;
 
-use Roots\Sage\Assets;
+use Jojoee\Koa\Assets;
 
 /**
  * Theme setup
