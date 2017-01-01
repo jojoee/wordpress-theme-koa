@@ -77,4 +77,4 @@ Koa - wordpress blog theme, inspired by [koa](http://koajs.com/)
 === Reference & Thank you ===
 
 * [Wordpress.org](https://wordpress.org/themes/)
-* Photo by [Taylor Leopold](https://unsplash.com/photos/COE-CIGj8VA)
+* Photo by [Taylor Leopold](https://unsplash.com/photos/COE-CIGj8VA), [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)
