@@ -14,7 +14,6 @@ $sage_includes = [
   'lib/vendor/kirki-helpers/class-koa-kirki.php',
   'lib/vendor/tgm-plugin-activation/class-tgm-plugin-activation.php',
   'lib/constants.php',
-  'lib/debug.php',
   'lib/utils.php',
   'lib/wp-utils.php',
   'lib/theme-utils.php',
