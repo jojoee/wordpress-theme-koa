@@ -3,8 +3,7 @@
 /*================================================================ Domain
 */
 
-function get_site_domain() {
-  $result = '';
+function koa_get_site_domain() {
   $sitename = get_site_url();
   $pattern = '/^(\/\/|http:\/\/|https:\/\/)/';
   $replace = '';
@@ -14,14 +13,14 @@ function get_site_domain() {
   return $result;
 }
 
-function the_site_domain() {
-  echo get_site_domain();
+function koa_the_site_domain() {
+  echo koa_get_site_domain();
 }
 
 /*================================================================ String
 */
 
-function get_limited_string( $str, $length ) {
+function koa_get_limited_string( $str, $length ) {
   $str_length = strlen( $str );
 
   if ( $str_length > $length ) {
@@ -40,23 +39,23 @@ function get_limited_string( $str, $length ) {
  * @param  [type]  $str [description]
  * @return boolean      [description]
  */
-function is_null_or_empty_string( $str ) {
+function koa_is_null_or_empty_string( $str ) {
   return ( ! isset( $str ) || trim( $str ) === '' );
 }
 
 /*================================================================ Image
 */
 
-function get_background_image_style( $url = '' ) {
-  $result = ( ! is_null_or_empty_string( $url ) )
+function koa_get_background_image_style( $url = '' ) {
+  $result = ( ! koa_is_null_or_empty_string( $url ) )
     ? 'style="background-image: url(\'' . $url . '\');"'
     : '';
 
   return $result;
 }
 
-function the_background_image_style( $url = '' ) {
-  echo get_background_image_style( $url );
+function koa_the_background_image_style( $url = '' ) {
+  echo koa_get_background_image_style( $url );
 }
 
 function koa_get_default_banner_url() {

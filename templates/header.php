@@ -15,17 +15,17 @@
 
   } else {
     $post_id = get_the_ID();
-    $banner_url = get_wpfeatured_image_url( $post_id );
+    $banner_url = koa_get_wpfeatured_image_url( $post_id );
 
-    if ( is_null_or_empty_string( $banner_url ) ) {
-      $banner_url = get_default_banner_url();
+    if ( koa_is_null_or_empty_string( $banner_url ) ) {
+      $banner_url = koa_get_default_banner_url();
       $custom_css = 'default';
     }
   }
 ?>
 
 <header class="banner <?php echo $custom_css; ?>"
-  <?php the_background_image_style( $banner_url ); ?>>
+  <?php koa_the_background_image_style( $banner_url ); ?>>
   <div class="container">
     <?php if ( is_home() ) : ?>
       <div class="heading">

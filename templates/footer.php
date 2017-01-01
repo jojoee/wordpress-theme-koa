@@ -16,6 +16,6 @@
 
 <footer class="content-info">
   <div class="colophon">
-    &copy; <?php echo date( 'Y' ) ?> <?php the_site_domain(); ?>
+    &copy; <?php echo date( 'Y' ) ?> <?php koa_the_site_domain(); ?>
   </div>
 </footer><!-- .content-info -->

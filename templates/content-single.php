@@ -17,8 +17,8 @@
 
       <div class="entry-other">
         <?php
-          the_category_list();
-          the_tag_list();
+          koa_the_category_list();
+          koa_the_tag_list();
         ?>
       </div>
 
