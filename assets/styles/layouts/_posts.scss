@@ -117,8 +117,11 @@ body.archive main > article {
 body.single-post main > article,
 body.attachment main > article,
 body.error404 main > article,
-body.search-no-results main > article {
-  padding: $space8 0;
+body.search-no-results main > article,
+body main > article.not-found {
+  padding: 48px 0 !important;
+  background-color: #fff !important;
+  border-bottom: 0px !important;
 }
 
 // Individual
