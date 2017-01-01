@@ -32,12 +32,12 @@ function koa_get_limited_string( $str, $length ) {
 }
 
 /**
- * [is_null_or_empty_string description]
+ * Check variable is null or empty string or not
  *
  * @see http://stackoverflow.com/questions/381265/better-way-to-check-variable-for-null-or-empty-string
  * 
- * @param  [type]  $str [description]
- * @return boolean      [description]
+ * @param string|null $str
+ * @return boolean
  */
 function koa_is_null_or_empty_string( $str ) {
   return ( ! isset( $str ) || trim( $str ) === '' );
