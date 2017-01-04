@@ -20,17 +20,6 @@ function koa_the_site_domain() {
 /*================================================================ String
 */
 
-function koa_get_limited_string( $str, $length ) {
-  $str_length = strlen( $str );
-
-  if ( $str_length > $length ) {
-    $str = substr( $str, 0, $length );
-    $str = substr( $str, 0, -3 ) . '...';
-  }
-
-  return $str;
-}
-
 /**
  * Check variable is null or empty string or not
  *
