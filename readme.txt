@@ -2,6 +2,43 @@
 
 Koa - wordpress blog theme, inspired by [koa](http://koajs.com/)
 
+Koa WordPress Theme, Copyright 2016 Nathachai Thongniran
+Koa is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see http://www.gnu.org/licenses/gpl-2.0.html.
+
+Koa WordPress Theme is derived from Sage WordPress Theme, Copyright 2013 Ben Word and Scott Walkinshaw
+Sage WordPress Theme is distributed under the terms of the MIT
+
+Koa WordPress Theme bundles the following third-party resources:
+
+FastClick, Copyright 2014 The Financial Times Ltd
+FastClick is licensed under the terms of the MIT
+Source: https://github.com/ftlabs/fastclick
+
+Font Awesome, Copyright 2012 Dave Gandy
+Font Awesome is licensed under the terms of the MIT
+Source: http://fontawesome.io/
+
+Slideout.js, Copyright 2015 Mango
+Slideout.js is licensed under the terms of the MIT
+Source: https://slideout.js.org/
+
+Jeans Kit, Copyright 2016 Nathachai Thongniran
+Jeans Kit is licensed under the terms of the MIT
+Source: https://github.com/jojoee/jeans-kit
+
 === Getting started (development purpose) ===
 
 1. Set path (e.g. `cd wp-content/themes/wordpress-theme-koa/`)
