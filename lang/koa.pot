@@ -102,8 +102,10 @@ msgstr ""
 msgid "Custom Template"
 msgstr ""
 
+#. Category
 msgid "Category"
 msgstr ""
 
+#. Tag
 msgid "Tag"
 msgstr ""
