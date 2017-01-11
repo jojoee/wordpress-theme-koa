@@ -10,8 +10,6 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 $sage_includes = [
-  'lib/vendor/kirki-helpers/include-kirki.php',
-  'lib/vendor/kirki-helpers/class-koa-kirki.php',
   'lib/constants.php',
   'lib/utils.php',
   'lib/wp-utils.php',
