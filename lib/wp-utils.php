@@ -36,7 +36,7 @@ function koa_the_category_list() {
 
   if ( ! koa_is_null_or_empty_string( $categories_list ) ) {
     echo '<div class="category-list">';
-    echo 'Category: ' . $categories_list;
+    echo __( 'Category: ' . $categories_list, 'koa' );
     echo '</div>';
   }
 }
@@ -54,7 +54,7 @@ function koa_the_tag_list() {
 
   if ( ! koa_is_null_or_empty_string( $tag_list ) ) {
     echo '<div class="tag-list">';
-    echo 'Tag: ' . $tag_list;
+    echo __( 'Tag: ' . $tag_list, 'koa' );
     echo '</div>';
   }
 }
