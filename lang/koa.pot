@@ -101,3 +101,9 @@ msgstr ""
 #. Template Name of the plugin/theme
 msgid "Custom Template"
 msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Tag"
+msgstr ""
