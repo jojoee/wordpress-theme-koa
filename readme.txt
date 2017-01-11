@@ -94,6 +94,9 @@ Source: https://github.com/jojoee/jeans-kit
 
 === Changelog ===
 
+= 1.0.5 =
+* Update minors
+
 = 1.0.4 =
 * Fix minors
 
