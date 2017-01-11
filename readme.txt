@@ -92,6 +92,24 @@ Source: https://github.com/jojoee/jeans-kit
 * [ ] Fix `.travis.yml`
 * [ ] Translation ready
 
+=== Changelog ===
+
+= 1.0.3 =
+* Remove Kirki, TGM
+* Update pot
+* Fix minors
+
+= 1.0.2 =
+* Remove unused
+
+= 1.0.1 =
+* Restructure & refactor
+* Remove unused and debug-related
+* Fix minors
+
+= 1.0.0 =
+* First release
+
 === Checklist ===
 
 * [x] Theme unit test: [wptest.io](http://wptest.io/)
