@@ -12,7 +12,6 @@
 $sage_includes = [
   'lib/vendor/kirki-helpers/include-kirki.php',
   'lib/vendor/kirki-helpers/class-koa-kirki.php',
-  'lib/vendor/tgm-plugin-activation/class-tgm-plugin-activation.php',
   'lib/constants.php',
   'lib/utils.php',
   'lib/wp-utils.php',
@@ -22,8 +21,7 @@ $sage_includes = [
   'lib/setup.php',
   'lib/titles.php',
   'lib/wrapper.php',
-  'lib/customizer.php',
-  'lib/tgm.php'
+  'lib/customizer.php'
 ];
 
 foreach ( $sage_includes as $file ) {
