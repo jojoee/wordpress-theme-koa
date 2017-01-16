@@ -72,6 +72,9 @@ body.home .banner {
 .nav-primary {
   display: none;
   background-color: $black;
+
+  // adjust for WordPress admin bar
+  padding: 36px 0;
   
   // Hide scroll bar (force)
   // http://stackoverflow.com/questions/3296644/hiding-the-scrollbar-on-an-html-page
