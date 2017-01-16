@@ -42,10 +42,10 @@ Source: https://github.com/jojoee/jeans-kit
 === Getting started (development purpose) ===
 
 1. Set path (e.g. `cd wp-content/themes/wordpress-theme-koa/`)
-2. Install global - `npm install -g bower gulp jscs`
+2. Install global - `npm install -g bower gulp jscs yarn`
 3. Install dependencies - `npm install & bower install & composer install`
 4. Set proxy on `devUrl` in `wp-content\themes\wordpress-theme-koa\assets\manifest.json`
-5. Run task runner - `gulp` or `gulp` watch (for develop)
+5. Run task runner - `gulp` or `gulp` watch (to develop)
 
 === Note ===
 
@@ -93,6 +93,9 @@ Source: https://github.com/jojoee/jeans-kit
 * [ ] Translation ready
 
 === Changelog ===
+
+= 1.0.6 =
+* Adjust main nav
 
 = 1.0.5 =
 * Update minors
