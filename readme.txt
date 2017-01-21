@@ -49,7 +49,7 @@ Source: https://github.com/jojoee/jeans-kit
 
 === Note ===
 
-* Based on [Sage](https://github.com/jojoee/sage-with-space)
+* Based on [sage-with-space](https://github.com/jojoee/sage-with-space) 8.4.2
 * CSS code style: [rscss](http://rscss.io/)
 * Javascript code style: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 * Yoast SEO breadcrumb over Breadcrumb NavXT
@@ -85,12 +85,12 @@ Source: https://github.com/jojoee/jeans-kit
 
 * [ ] Lightbox: (e.g. [MediumLightbox](https://github.com/davidecalignano/MediumLightbox), [Fluidbox](https://github.com/terrymun/Fluidbox), [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/))
 * [x] Google Fonts: [Web Font Loader](https://github.com/typekit/webfontloader)
-* [x] Theme Customizer by [Kirki](https://kirki.org/)@15commits
-* [x] [TGM Plugin Activation](https://github.com/TGMPA/TGM-Plugin-Activation) - v2.6.1
+* [ ] Theme Customizer by [Kirki](https://kirki.org/)@15commits
+* [ ] [TGM Plugin Activation](https://github.com/TGMPA/TGM-Plugin-Activation) - v2.6.1
 * [ ] [FastClick](https://github.com/ftlabs/fastclick)
 * [ ] Navmenu: when hover then show scrollbar
-* [ ] Fix `.travis.yml`
-* [ ] Translation ready
+* [ ] Fix `.travis.yml` by implementing [phpcs - WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
+* [x] Translation ready
 
 === Changelog ===
 
