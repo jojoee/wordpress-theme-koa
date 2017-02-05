@@ -1,5 +1,7 @@
 === Koa ===
 
+[![Build Status](https://travis-ci.org/jojoee/wordpress-theme-koa.svg)](https://travis-ci.org/jojoee/wordpress-theme-koa)
+
 Koa - wordpress blog theme, inspired by [koa](http://koajs.com/)
 
 Koa WordPress Theme, Copyright 2016 Nathachai Thongniran
