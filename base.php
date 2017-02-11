@@ -24,10 +24,11 @@ html { margin-top: 0 !important; }
 <nav id="nav-primary" class="nav-primary clearfix">
   <?php
     if ( has_nav_menu( 'primary_navigation' ) ) {
-      wp_nav_menu( [
+      $nav_menu_arg = [
         'theme_location'  => 'primary_navigation',
-        'menu_class'      => 'nav'
-      ] );
+        'menu_class'      => 'nav',
+      ];
+      wp_nav_menu( $nav_menu_arg );
     }
   ?>
 </nav>
