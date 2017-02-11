@@ -91,7 +91,7 @@ Source: https://github.com/jojoee/jeans-kit
 * [ ] [TGM Plugin Activation](https://github.com/TGMPA/TGM-Plugin-Activation) - v2.6.1
 * [ ] [FastClick](https://github.com/ftlabs/fastclick)
 * [ ] Navmenu: when hover then show scrollbar
-* [ ] Fix `.travis.yml` by implementing [phpcs - WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
+* [x] Fix `.travis.yml` by implementing [phpcs - WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
 * [x] Translation ready
 
 === Changelog ===
@@ -144,3 +144,9 @@ Source: https://github.com/jojoee/jeans-kit
 
 * [Wordpress.org](https://wordpress.org/themes/)
 * Photo by [Taylor Leopold](https://unsplash.com/photos/COE-CIGj8VA), [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)
+* PHP CodeSniffer
+  * Using PHP CodeSniffer With WordPress: [Article 1](https://code.tutsplus.com/tutorials/using-php-codesniffer-with-wordpress-understanding-code-smells--cms-26352), [Article 2](https://code.tutsplus.com/tutorials/using-php-codesniffer-with-wordpress-installing-and-using-php-codesniffer--cms-26394), [Article 3](https://code.tutsplus.com/tutorials/using-php-codesniffer-with-wordpress-installing-and-using-the-wordpress-rules--cms-26443)
+  * [How to setup PHP CodeSniffer on Windows machine ?](http://subharanjan.com/setup-php-codesniffer-windows-machine/)
+  * [Installing PHP 5.4 and PHP Codesniffer on Windows](https://kogentadono.com/2012/10/08/installing-php-5-4-and-php-codesniffer-on-windows/)
+  * [squizlabs/PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+  * [WordPress-Coding-Standards/WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
