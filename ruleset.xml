@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset name="Wordpress Custom">
+  <rule ref="WordPress">
+    <!-- indent -->
+    <exclude name="Generic.WhiteSpace.ScopeIndent"/>
+    <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+    <exclude name="Generic.Files.LineEndings"/>
+
+    <!-- doc -->
+    <exclude name="Squiz.Commenting"/>
+
+    <!-- escape -->
+    <exclude name="WordPress.XSS.EscapeOutput"/>
+  </rule>
+
+  <!-- indent -->
+  <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <properties>
+      <property name="indent" value="2"/>
+      <property name="tabIndent" value="false"/>
+    </properties>
+  </rule>
+  <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+</ruleset>
