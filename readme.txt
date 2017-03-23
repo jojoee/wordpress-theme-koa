@@ -47,7 +47,7 @@ Source: https://github.com/jojoee/jeans-kit
 2. Install global - `npm install -g bower gulp jscs yarn`
 3. Install dependencies - `npm install & bower install & composer install`
 4. Set proxy on `devUrl` in `wp-content\themes\wordpress-theme-koa\assets\manifest.json`
-5. Run task runner - `gulp` or `gulp` watch (to develop)
+5. Run task runner - `gulp` or `gulp watch` (to develop)
 
 === Note ===
 
