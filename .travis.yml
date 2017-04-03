@@ -45,6 +45,6 @@ script:
   - php -v
   - node -v
   - npm -v
-  - composer -v
+  - composer --version
   - npm run validate
   - $PHPCS_DIR/scripts/phpcs -p ./*.php --standard=ruleset.xml
