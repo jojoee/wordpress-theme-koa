@@ -1,4 +1,5 @@
-sudo: false
+sudo: required
+dist: trusty
 language: php
 php:
   - 5.4
@@ -12,12 +13,18 @@ matrix:
   allow_failures:
     - php: nightly
 
+env:
+  - NODE_RELEASE=6.x
+  - NOTE_RELEASE=7.x
+
 cache:
   directories:
     - bower_components
     - node_modules
 
 before_install:
+  - sudo rm -rf ~/.nvm - curl -sL "https://deb.nodesource.com/setup_${NODE_RELEASE}" | sudo -E bash -
+  - sudo apt-get install -y nodejs
   - export PHPCS_DIR=/tmp/phpcs
   - export SNIFFS_DIR=/tmp/sniffs
   - git clone -b master --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git $PHPCS_DIR
@@ -35,5 +42,9 @@ install:
   - composer global require squizlabs/php_codesniffer
 
 script:
+  - php -v
+  - node -v
+  - npm -v
+  - composer -v
   - npm run validate
   - $PHPCS_DIR/scripts/phpcs -p ./*.php --standard=ruleset.xml
