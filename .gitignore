@@ -1,12 +1,21 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# Built
 dist
+
+# Dependencies
 bower_components
 node_modules
+vendor
+
+# Log
 npm-debug.log
 
-bk
+# Lock
+yarn.lock
+composer.lock
+
+# IDE && Editor
 .idea
-readme*.txt
-!readme-*.txt
-wordpress-theme-koa.zip
+.vscode
+
+# Backup
+bk
