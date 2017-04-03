@@ -93,6 +93,8 @@ Source: https://github.com/jojoee/jeans-kit
 * [ ] Navmenu: when hover then show scrollbar
 * [x] Fix `.travis.yml` by implementing [phpcs - WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
 * [x] Translation ready
+* [x] Upgrade `gulpfile.js` and `package.json` to sage 8.5.1
+* [x] Implement [sage-with-space.xml](https://github.com/jojoee/sage-with-space/blob/master/sage-with-space.xml) PhpStorm code style config
 
 === Changelog ===
 
