@@ -23,6 +23,8 @@ $sage_includes = [
 ];
 
 foreach ( $sage_includes as $file ) {
+  $filepath = locate_template( $file );
+
   require_once $filepath;
 }
 unset( $file, $filepath );
