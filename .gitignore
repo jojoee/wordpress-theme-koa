@@ -9,10 +9,6 @@ vendor
 # Log
 npm-debug.log
 
-# Lock
-yarn.lock
-composer.lock
-
 # IDE && Editor
 .idea
 .vscode
