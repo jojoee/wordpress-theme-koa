@@ -32,11 +32,11 @@ class SageWrapping {
   public static $base;
 
   public function __construct( $template = 'base.php' ) {
-    $this->slug      = basename( $template, '.php' );
+    $this->slug = basename( $template, '.php' );
     $this->templates = [ $template ];
 
     if ( self::$base ) {
-      $str = substr( $template, 0, - 4 );
+      $str = substr( $template, 0, -4 );
       array_unshift( $this->templates, sprintf( $str . '-%s.php', self::$base ) );
     }
   }
@@ -54,7 +54,7 @@ class SageWrapping {
     }
 
     self::$main_template = $main;
-    self::$base          = basename( self::$main_template, '.php' );
+    self::$base = basename( self::$main_template, '.php' );
 
     if ( self::$base === 'index' ) {
       self::$base = false;

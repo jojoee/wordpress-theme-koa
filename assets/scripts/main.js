@@ -108,7 +108,7 @@
   });
 
   // Slideout.js - // Nav Primary Btn
-  var $navSubmenuBtn =  $('#nav-primary .nav > .menu-item-has-children > a');
+  var $navSubmenuBtn = $('#nav-primary .nav > .menu-item-has-children > a');
   $navSubmenuBtn.on('click', function(e) {
     e.preventDefault(); // Force not follow the link
     $(this).next().toggleClass('active');

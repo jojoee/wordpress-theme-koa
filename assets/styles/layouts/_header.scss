@@ -10,7 +10,7 @@
   .container {
     display: table;
   }
-  
+
   .heading {
     text-align: center;
     display: table-cell;
@@ -28,7 +28,7 @@
   .sitedesc {
 
   }
-  
+
   // unused
   &.noimg {
     display: none;
@@ -75,11 +75,11 @@ body.home .banner {
 
   // adjust for WordPress admin bar
   padding: 36px 0;
-  
+
   // Hide scroll bar (force)
   // http://stackoverflow.com/questions/3296644/hiding-the-scrollbar-on-an-html-page
-  &::-webkit-scrollbar { 
-    display: none; 
+  &::-webkit-scrollbar {
+    display: none;
   }
 
   a {
@@ -104,7 +104,7 @@ body.home .banner {
 
     }
   }
-  
+
   // First-level sub-menu
   .nav > .menu-item-has-children {
 

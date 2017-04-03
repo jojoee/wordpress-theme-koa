@@ -3,9 +3,7 @@
 
 $white: #ffffff;
 $black: #33333d;
-$gray: #f9f9f9; // unused
-$gray-dark: #b5b5b5; // unused
-$gray-light: #fdfdfd; // unused
+$gray: #f9f9f9;
 $accent-color: #33a0c0;
 $accent-hover-color: #3bbfe6;
 
@@ -14,14 +12,13 @@ $text-color: #333333 !default;
 $hr-border: #eeeeee !default;
 $code-bg-color: #f9f9f9;
 $border-color: #f9f9f9 !default;
-$btn-color: #ff0000 !default; // unused
 $btn-shadow-color: #6d6d6d;
 $copyright-color: #b5b5b5;
-$article-bg-color: $white; // unused
 $even-article-bg-color: #fbfbfb;
 $sticky-article-bg-color: $accent-color;
 
-$label-color: #9e9e9e !default; // used for form
+// used for form
+$label-color: #9e9e9e !default;
 $input-bg-color: #f9f9f9 !default;
 $input-border-color: #d1d1d1 !default;
 $blockquote-bg-color: #f9f9f9 !default;

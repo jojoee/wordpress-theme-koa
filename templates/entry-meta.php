@@ -10,5 +10,5 @@
       class="fn">
       <?php echo get_the_author(); ?>
     </a>
-  </p>  
+  </p>
 </div>

@@ -27,7 +27,7 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus( [
-    'primary_navigation' => __( 'Primary Navigation', 'koa' )
+    'primary_navigation' => __( 'Primary Navigation', 'koa' ),
   ] );
 
   // Enable post thumbnails
@@ -64,7 +64,7 @@ function widgets_init() {
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'after_title'   => '</h3>',
   ] );
 
   register_sidebar( [
@@ -73,7 +73,7 @@ function widgets_init() {
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'after_title'   => '</h3>',
   ] );
 
   register_sidebar( [
@@ -82,7 +82,7 @@ function widgets_init() {
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'after_title'   => '</h3>',
   ] );
 }
 
@@ -116,7 +116,7 @@ function assets() {
     wp_enqueue_script( 'comment-reply' );
   }
 
-  wp_enqueue_script( 'koa-webfont/js', '//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js', [], '1.6.16', true );
+  wp_enqueue_script( 'koa-webfont/js', '//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js', [ ], '1.6.16', true );
   wp_enqueue_script( 'koa-sage/js', Assets\asset_path( 'scripts/main.js' ), [ 'jquery' ], null, true );
 }
 

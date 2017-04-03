@@ -20,7 +20,7 @@ a {
   text-decoration: none;
   color: $link-color;
   @include transition;
-  
+
   &:active,
   &:focus,
   &.visited,
@@ -150,7 +150,7 @@ samp {
 }
 
 .wrap {
-  
+
 }
 
 /*================================================================ Common

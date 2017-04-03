@@ -24,7 +24,7 @@ function koa_the_site_domain() {
  * Check variable is null or empty string or not
  *
  * @see http://stackoverflow.com/questions/381265/better-way-to-check-variable-for-null-or-empty-string
- * 
+ *
  * @param string|null $str
  * @return boolean
  */

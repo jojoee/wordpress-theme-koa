@@ -11,12 +11,12 @@ main > article {
   &:last-child {
     border-bottom: 0;
   }
-  
+
   header {
 
     .entry-title {
       margin: 0 0 $space4;
-    
+
       a {
         font-size: 32px;
         color: $black;
@@ -37,24 +37,24 @@ main > article {
   }
 
   figure {
-    
+
     figcaption {
       border: 1px solid $border-color;
     }
   }
-  
+
   // Single post / page only
   .entry-content {
     @extend .clearfix;
     margin: $space2 0;
     overflow: hidden;
   }
-  
+
   // Single post / page only
   .entry-other {
     @extend .clearfix;
   }
-  
+
   // Listing only
   .entry-summary {
     @extend .clearfix;
@@ -66,7 +66,7 @@ main > article {
 }
 
 .article-meta {
-  
+
   .updated {
     display: inline-block;
     margin-right: $space1;
@@ -87,7 +87,7 @@ main > article {
 body.home main > article.post.sticky {
   background-color: $sticky-article-bg-color;
   color: $white;
-  
+
   .entry-title a {
     color: $white;
   }
@@ -120,7 +120,7 @@ body.error404 main > article,
 body.search-no-results main > article,
 body main > article.not-found {
   padding: 48px 0 !important;
-  background-color: #fff !important;
+  background-color: #ffffff !important;
   border-bottom: 0px !important;
 }
 

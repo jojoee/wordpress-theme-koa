@@ -17,17 +17,17 @@
 
       <div class="entry-other">
         <?php
-          koa_the_category_list();
-          koa_the_tag_list();
+        koa_the_category_list();
+        koa_the_tag_list();
         ?>
       </div>
 
       <footer>
         <?php
-          wp_link_pages( [
-            'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'koa' ),
-            'after'  => '</p></nav>'
-          ] );
+        wp_link_pages( [
+          'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'koa' ),
+          'after'  => '</p></nav>',
+        ] );
         ?>
       </footer>
 

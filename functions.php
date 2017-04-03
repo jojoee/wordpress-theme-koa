@@ -50,12 +50,12 @@ function koa_posts_navigation() {
   <div class="posts-navigation-wrap">
     <div class="container">
       <?php
-        if ( function_exists( 'wp_pagenavi' ) ) {
-          wp_pagenavi();
+      if ( function_exists( 'wp_pagenavi' ) ) {
+        wp_pagenavi();
 
-        } else {
-          the_posts_navigation();
-        }
+      } else {
+        the_posts_navigation();
+      }
       ?>
     </div>
   </div>

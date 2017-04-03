@@ -6,12 +6,12 @@
   &:last-child {
     border-bottom: 0;
   }
-  
+
   // Title
   h3 {
     margin-top: 0;
   }
-  
+
   // Listing
   // (e.g. archive, category)
   ul {
@@ -20,13 +20,13 @@
 
     }
   }
-  
+
   // Search widget
   &.widget_search {
 
     .search-submit {
       display: none;
-    } 
+    }
   }
 
   // Calendar
