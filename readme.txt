@@ -41,7 +41,7 @@ Jeans Kit, Copyright 2016 Nathachai Thongniran
 Jeans Kit is licensed under the terms of the MIT
 Source: https://github.com/jojoee/jeans-kit
 
-=== Getting started (development purpose) ===
+=== Getting started (development) ===
 
 1. Set path (e.g. `cd wp-content/themes/wordpress-theme-koa/`)
 2. Install global - `npm install -g bower gulp jscs yarn`
@@ -123,7 +123,7 @@ Source: https://github.com/jojoee/jeans-kit
 = 1.0.0 =
 * First release
 
-=== Checklist ===
+=== Checklist (development) ===
 
 * [x] Theme unit test: [wptest.io](http://wptest.io/)
 * [x] Page Layout - [Home](http://localhost:3000/)
@@ -131,7 +131,7 @@ Source: https://github.com/jojoee/jeans-kit
 * [x] Page Layout - Archive: [Tag](http://localhost:3000/tag/8bit/)
 * [x] Page Layout - Archive: [Author](http://localhost:3000/author/joe/)
 * [x] Page Layout - Archive: [Date](http://localhost:3000/2012/12/)
-* [x] Page Layout - Singular: [Post](http://wp11.dev/image-alignment/)
+* [x] Page Layout - Singular: [Post](http://localhost:3000/image-alignment/)
 * [x] Page Layout - Singular: [Page](http://localhost:3000/about/)
 * [x] Page Layout - [Attachment](http://localhost:3000/photo-1428189923803-e9801d464d76/)
 * [x] Page Layout - [Search](http://localhost:3000/?s=test)
